@@ -17,7 +17,7 @@ class boilderplate : public expression {
 	
 		boilderplate();
 		
-		void display(LedControl lc, int iterator, bool direction);
+		void display(LedControl lc);
 		
 	/*
 	Inside of private, define methods that will only be used inside of the cpp file. 
