@@ -25,7 +25,7 @@ and manipulates the Ledcontrol object
 			---DO NOT EDIT CONTENTS----
 */
 
-void boilerplate::display(LedControl lc, int iterator, bool direction){
+void boilerplate::display(LedControl lc){
 
 	lc.setRow(0, 3, 255);
 }
@@ -49,7 +49,7 @@ class boilderplate : public expression {
 	
 		boilderplate();
 		
-		void display(LedControl lc, int iterator, bool direction);
+		void display(LedControl lc);
 		
 	/*
 	Inside of private, define methods that will only be used inside of the cpp file. 
