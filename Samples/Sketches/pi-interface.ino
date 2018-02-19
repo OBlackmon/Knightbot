@@ -1,42 +1,25 @@
 
 #include <blink001.h>
-
-#include <winkyFace.h>
-
-#include <superHappyFace.h>
-
-//#include <straightFace.h>
-
-#include <sadFace.h>
-
-#include <errorFace.h>
-
-#include <happyFace.h>
-
 #include <LedControl.h>
 
+/*
+This arduino file was created to accept a specific input from a raspberry pi. The current interface involves receiving values between
+0 - 9 from a raspberry pi and responding according to the switch statement below.
+*/
 int incomingByte = 0;
 
 int DIN = 12;
 int CS = 11;
 int CLK = 10;
 
-int i = 0;
-boolean isActive = false;
 int selection = 0;
 /*
    false = down
    true = up
 */
 
-boolean direction = false;
 LedControl lc = LedControl(DIN, CLK, CS, 2);
 blink001 blink1 = blink001();
-errorFace error = errorFace();
-sadFace sad = sadFace();
-//straightFace straight = straightFace();
-superHappyFace superHappy = superHappyFace();
-winkyFace winky = winkyFace();
 
 void setup() {
   // put your setup code here, to run once:
@@ -50,46 +33,35 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
-
-
-  if (isActive == false) {
-    if (Serial.available()) {
+   
+//Checking to see if input is available
+   if (Serial.available()) {
 
       selection = Serial.read() - '0';
-    }
-  }
+   }
 
   switch (selection) {
     case 0:
-      error.display(lc, i, direction);
-      isActive = true;
+      blink1.display(lc);
       break;
 
     case 1:
-      sad.display(lc, i, direction);
-      isActive = true;
+     
       break;
 
     case 2:
-      blink1.display(lc, i, direction);
-      isActive = true;
+      
       break;
 
     case 3:
-      superHappy.display(lc, i, direction);
-      isActive = true;
+      
       break;
 
     case 4:
-      blink1.display(lc, i, direction);
-      isActive = true;
+      
       break;
   }
-
-
-
+   
   checkIterator();
 }
 
