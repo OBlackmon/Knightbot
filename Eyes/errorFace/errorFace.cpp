@@ -22,9 +22,9 @@ Make sure the text before the "::" matches the name of the file
 			---DO NOT EDIT CONTENTS----
 */
 
-void errorFace::display(LedControl lc, int iterator, bool direction){
+void errorFace::display(LedControl lc){
 
-	sweepAnim(lc, iterator, direction);
+	sweepAnim(lc);
 	
 }
 
@@ -32,7 +32,7 @@ void errorFace::display(LedControl lc, int iterator, bool direction){
 Make sure the text before the "::" matches the name of the file
 */
 
-void errorFace::sweepAnim(LedControl lc, int iterator, bool direction){
+void errorFace::sweepAnim(LedControl lc){
 
 	lc.setRow(0, 0, pupil[0]);
 	lc.setRow(0, 1, pupil[1]);
