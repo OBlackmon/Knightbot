@@ -9,12 +9,12 @@ class errorFace : public expression {
 	
 		errorFace();
 		
-		void display(LedControl lc, int iterator, bool direction);
+		void display(LedControl lc);
 		
 		
 	private:
 		
-		void sweepAnim(LedControl lc, int iterator, bool direction);
+		void sweepAnim(LedControl lc);
 		
 		int pupil[8] = {195, 231, 126, 60, 60, 126, 231, 195};
 };
