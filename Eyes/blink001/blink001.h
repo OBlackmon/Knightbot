@@ -13,10 +13,10 @@ class blink001 : public expression {
 		
 		
 	private:
-		void displayPupil(LedControl lc, int iterator, bool direction);
 		
 		void sweepAnim(LedControl lc, int iterator, bool direction);
 		
+		int pupil[8] = {0, 0, 24, 60, 60, 24, 0, 0};
 };
 
 #endif
