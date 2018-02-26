@@ -62,28 +62,6 @@ void loop() {
       break;
   }
    
-  checkIterator();
-}
-
-void checkIterator() {
-  if (i < 8) {
-    i++;
-
-  } else {
-
-    i = 0;
-    direction = !direction;
-
-    if (direction == false) {
-      delay(1000);
-      isActive = false;
-      selection = 0;
-    } else {
-      delay(1000);
-
-    }
-  }
-
 }
 
 
