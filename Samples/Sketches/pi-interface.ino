@@ -37,7 +37,7 @@ void loop() {
 //Checking to see if input is available
    if (Serial.available()) {
 
-      selection = Serial.read() - '0';
+      selection = Serial.read(),'0';
    }
 
   switch (selection) {
