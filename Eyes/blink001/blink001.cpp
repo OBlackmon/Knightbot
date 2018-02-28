@@ -22,9 +22,9 @@ Make sure the text before the "::" matches the name of the file
 			---DO NOT EDIT CONTENTS----
 */
 
-void blink001::display(LedControl lc, int iterator, bool direction){
+void blink001::display(LedControl lc){
 	
-	sweepAnim(lc, iterator, direction);
+	sweepAnim(lc);
 	
 }
 
@@ -32,7 +32,7 @@ void blink001::display(LedControl lc, int iterator, bool direction){
 sweepAnim() is the function that houses the instructions for the eye animation 
 Make sure the text before the "::" matches the name of the file
 */
-void blink001::sweepAnim(LedControl lc, int iterator, bool direction){
+void blink001::sweepAnim(LedControl lc){
 
 	lc.setColumn(0, 2, pupil[2]);
 	lc.setColumn(0, 3, pupil[3]);
