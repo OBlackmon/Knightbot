@@ -13,7 +13,7 @@ class happyFace : public expression {
 	private:
 		void displayPupil(LedControl lc, int iterator, bool direction);
 		
-		void sweepAnim(LedControl lc, int iterator, bool direction);
+		int pupil[8] = {254, 129, 129, 129, 157, 157, 157, 254};
 };
 
 #endif
