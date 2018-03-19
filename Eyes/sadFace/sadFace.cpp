@@ -17,10 +17,10 @@ Make sure the text before the "::" matches the name of the file
 			---DO NOT EDIT CONTENTS----
 */
 
-void sadFace::display(LedControl lc, int iterator, bool direction){
+void sadFace::display(LedControl lc){
 
-	displayPupil(lc, iterator, direction);
-	sweepAnim(lc, iterator, direction);
+	displayPupil(lc);
+	sweepAnim(lc);
 	
 }
 
@@ -29,7 +29,7 @@ sweepAnim() is the function that houses the instructions for the eye animation
 Make sure the text before the "::" matches the name of the file
 */
 
-void sadFace::sweepAnim(LedControl lc, int iterator, bool direction){
+void sadFace::sweepAnim(LedControl lc){
 
 	//Logic used to determine what to make the row number
   int row = currentRow(iterator, direction);
@@ -44,10 +44,7 @@ displayPupil() is the function that houses the static display for each eye
 Make sure the text before the "::" matches the name of the file
 */
 
-void sadFace::displayPupil(LedControl lc, int iterator, bool direction){
-
-	//iterator row
-  int row = currentRow(iterator, direction);
+void sadFace::displayPupil(LedControl lc){
   
   //First Eye
   lc.setRow(0, 0, 255);
