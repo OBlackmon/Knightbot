@@ -6,16 +6,14 @@ straightFace::straightFace(){
 }
 
 
-void straightFace::display(LedControl lc, int iterator, bool direction){
+void straightFace::display(LedControl lc){
 
-	sweepAnim(lc, iterator, direction);
-	displayPupil(lc, iterator, direction);
+	sweepAnim(lc);
+	displayPupil(lc);
 }
 
 
-void straightFace::sweepAnim(LedControl lc, int iterator, bool direction){
-
-	int row = currentRow(iterator, direction);
+void straightFace::sweepAnim(LedControl lc){
   
   if(direction == false){
     /*
