@@ -22,9 +22,9 @@ Make sure the text before the "::" matches the name of the file
 			---DO NOT EDIT CONTENTS----
 */
 
-void happyFace::display(LedControl lc, int iterator, bool direction){
+void happyFace::display(LedControl lc){
 
-	displayPupil(lc, iterator, direction);
+	displayPupil(lc);
 	
 }
 
@@ -33,7 +33,7 @@ displayPupil() is the function that houses the static display for each eye
 Make sure the text before the "::" matches the name of the file
 */
 
-void happyFace::displayPupil(LedControl lc, int iterator, bool direction){
+void happyFace::displayPupil(LedControl lc){
   
   //First Eye
    
@@ -81,9 +81,9 @@ Make sure the text before the "::" matches the name of the file
 			---DO NOT EDIT CONTENTS----
 */
 
-void happyFace::display(LedControl lc, int iterator, bool direction){
+void happyFace::display(LedControl lc){
 
-	displayPupil(lc, iterator, direction);
+	displayPupil(lc);
 	
 }
 
@@ -92,7 +92,7 @@ displayPupil() is the function that houses the static display for each eye
 Make sure the text before the "::" matches the name of the file
 */
 
-void happyFace::displayPupil(LedControl lc, int iterator, bool direction){
+void happyFace::displayPupil(LedControl lc){
   
   //First Eye
    
