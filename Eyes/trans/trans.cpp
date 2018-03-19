@@ -22,9 +22,9 @@ Make sure the text before the "::" matches the name of the file
 			---DO NOT EDIT CONTENTS----
 */
 
-void trans::display(LedControl lc, int iterator, bool direction){
+void trans::display(LedControl lc){
 	
-	sweepAnim(lc, iterator, direction);
+	sweepAnim(lc);
 	
 }
 
@@ -32,7 +32,7 @@ void trans::display(LedControl lc, int iterator, bool direction){
 sweepAnim() is the function that houses the instructions for the eye animation 
 Make sure the text before the "::" matches the name of the file
 */
-void trans::sweepAnim(LedControl lc, int iterator, bool direction){
+void trans::sweepAnim(LedControl lc){
 
 	for(int i = 7; i >= 0; i--){
 
