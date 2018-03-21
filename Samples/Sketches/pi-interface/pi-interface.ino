@@ -12,9 +12,11 @@
 */
 int incomingByte = 0;
 
-int DIN = 12;
-int CS = 11;
-int CLK = 10;
+int pupilBlink[8] = {255, 255, 255, 255, 255, 255, 255, 255};
+
+int DIN = 5;
+int CS = 4;
+int CLK = 3;
 
 int eye_selection = 0;
 int head_selection = 0;
@@ -28,7 +30,6 @@ LedControl lc = LedControl(DIN, CLK, CS, 2);
 blink001 blink1 = blink001();
 happyFace happy = happyFace();
 errorFace error = errorFace();
-
 
 void setup() {
   // put your setup code here, to run once:
@@ -46,26 +47,46 @@ void loop() {
   //Checking to see if input is available
   if (Serial.available()) {
 
+    /*
+      eye_selection(), head_selection(), Serial.parseInt(), and wheel_selection() are
+      being used to parse/translate the input recieved from the Rasberry Pi into useable
+      values in the form: "X,X,X". 
+    */
+    
     eye_selection = Serial.parseInt();
     head_selection = Serial.parseInt();
     wheel_selection = Serial.parseInt();
   }
 
+  /*
+    This switch statement is being used to intake the input values parsed from the Rasberry Pi
+    and then running the various combinations of numbers to convery specific eyes, head movements, and wheel movements
+  */
+  
   switch (eye_selection) {
     case 0:
 
       break;
 
     case 1:
+
+      blinkAnim();
       blink1.display(lc);
+
       break;
 
     case 2:
-
+      
+      blinkAnim();
+      error.display(lc);
+      
       break;
 
     case 3:
 
+      blinkAnim();
+      happy.display(lc);
+      
       break;
 
     case 4:
@@ -80,7 +101,6 @@ void loop() {
 
     case 1:
 
-      error.display(lc);
       break;
 
     case 2:
@@ -103,7 +123,6 @@ void loop() {
 
     case 1:
 
-      happy.display(lc);
       break;
 
     case 2:
@@ -119,8 +138,47 @@ void loop() {
       break;
   }
 
+  eye_selection = 0;
+  head_selection = 0;
+  wheel_selection = 0;
 
 }
+
+/*
+  This is the code that is used for the blink animation being used in between eye transitions 
+*/
+
+void blinkAnim() {
+
+  for (int i = 7; i >= 0; i--) {
+
+    lc.setColumn(0, i, pupilBlink[i]);
+    lc.setColumn(1, i, pupilBlink[i]);
+    delay(25);
+  }
+
+  delay(500);
+
+  for (int i = 0; i <= 7; i++) {
+
+    lc.setColumn(0, i, 0);
+    lc.setColumn(1, i, 0);
+    delay(2);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
