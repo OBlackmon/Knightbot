@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #include "happyFace.h"
 
 	int pupil[8] = {254, 129, 129, 129, 157, 157, 157, 254};
@@ -116,5 +116,4 @@ void happyFace::displayPupil(LedControl lc){
   lc.setRow(1, 6, pupil[6]);
   lc.setRow(1, 7, pupil[7]);
   
->>>>>>> master
 }
