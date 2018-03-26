@@ -18,6 +18,8 @@ class Head {
 		void turnRight(Servo horiz);
 		
 		void turnLeft(Servo horiz);
+		
+		void nod(Servo vertic);
 	/*
 	Inside of private, define methods that will only be used inside of the cpp file. 
 	*/	

@@ -46,6 +46,19 @@ void Head::turnLeft(Servo horiz){
 	delay(500);
 }
 
+
+void Head::nod(Servo vertic){
+
+	vertic.write(50);
+  	delay(500);
+  	vertic.write(120);
+  	delay(500);
+  	vertic.write(20);
+  	delay(500);
+  	vertic.write(120);
+  	delay(500);
+  	vertic.write(55);
+}
 /*
 Replace all instances of "Head" with your desired class name
 */
@@ -66,6 +79,8 @@ class Head {
 		void turnRight(Servo horiz);
 		
 		void turnLeft(Servo horiz);
+		
+		void nod(Servo vertic);
 		
 	/*
 	Inside of private, define methods that will only be used inside of the cpp file. 
