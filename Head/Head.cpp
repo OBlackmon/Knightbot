@@ -3,7 +3,8 @@ Replace all instances of "Head" with what you want to call the class
 */
 
 #include "Head.h"
-
+#include "Servo.h"
+#include "Arduino.h"
 /*
 lc is the object that controls and displays the light on each matrix
 direction is a boolean that is false when down and true when up
@@ -52,9 +53,7 @@ Replace all instances of "Head" with your desired class name
 #define	Head_h
 
 
-#include <expression.h>
-
-class boilderplate : public expression {
+class Head {
 	
 	/*
 	Inside of public, define methods that will be used in the main Arduino file. For instance, display() is the method calledi in the main loop.
@@ -62,7 +61,7 @@ class boilderplate : public expression {
 	*/
 	public:
 	
-		boilderplate();
+		Head();
 		
 		void turnRight(Servo horiz);
 		
