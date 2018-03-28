@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
 Replace all instances of "Head" with your desired class name
 */
@@ -36,6 +36,7 @@ Replace all instances of "Head" with your desired class name
 
 #include <Servo.h>
 #include <Arduino.h>
+#include <Adafruit_PWMServoDriver.h>
 class Head {
 	/*
 	Inside of public, define methods that will be used in the main Arduino file. For instance, display() is the method calledi in the main loop.
@@ -58,4 +59,3 @@ class Head {
 };
 
 #endif
->>>>>>> cb757f08fd7b73f3f718534cb5ef1c25e61a5439
