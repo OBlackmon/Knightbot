@@ -5,7 +5,7 @@ Replace all instances of "Head" with your desired class name
 #define	Head_h
 
 
-class boilderplate {
+class Head {
 	
 	/*
 	Inside of public, define methods that will be used in the main Arduino file. For instance, display() is the method calledi in the main loop.
@@ -13,7 +13,7 @@ class boilderplate {
 	*/
 	public:
 	
-		boilderplate();
+		Head();
 		
 		void turnRight(Servo horiz);
 		
