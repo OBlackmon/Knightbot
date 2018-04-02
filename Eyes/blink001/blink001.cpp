@@ -1,6 +1,6 @@
 #include "blink001.h"
 
-	int pupil[8] = {0, 0, 24, 60, 60, 24, 0, 0};
+	int pupilBlink1[8] = {0, 0, 24, 60, 60, 24, 0, 0};
 
 /*
 lc is the object that controls and displays the light on each matrix
@@ -34,15 +34,15 @@ Make sure the text before the "::" matches the name of the file
 */
 void blink001::sweepAnim(LedControl lc){
 
-	lc.setColumn(0, 2, pupil[2]);
-	lc.setColumn(0, 3, pupil[3]);
-	lc.setColumn(0, 4, pupil[3]);
-	lc.setColumn(0, 5, pupil[2]);
+	lc.setColumn(0, 2, pupilBlink1[2]);
+	lc.setColumn(0, 3, pupilBlink1[3]);
+	lc.setColumn(0, 4, pupilBlink1[3]);
+	lc.setColumn(0, 5, pupilBlink1[2]);
 	
-	lc.setColumn(1, 2, pupil[2]);
-	lc.setColumn(1, 3, pupil[3]);
-	lc.setColumn(1, 4, pupil[3]);
-	lc.setColumn(1, 5, pupil[2]);
+	lc.setColumn(1, 2, pupilBlink1[2]);
+	lc.setColumn(1, 3, pupilBlink1[3]);
+	lc.setColumn(1, 4, pupilBlink1[3]);
+	lc.setColumn(1, 5, pupilBlink1[2]);
   
 }
 

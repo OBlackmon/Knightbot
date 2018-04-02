@@ -1,6 +1,6 @@
 #include "errorFace.h"
 
-	int pupil[8] = {195, 231, 126, 60, 60, 126, 231, 195};
+	int pupilError[8] = {195, 231, 126, 60, 60, 126, 231, 195};
 	
 /*
 lc is the object that controls and displays the light on each matrix
@@ -34,23 +34,23 @@ Make sure the text before the "::" matches the name of the file
 
 void errorFace::sweepAnim(LedControl lc){
 
-	lc.setRow(0, 0, pupil[0]);
-	lc.setRow(0, 1, pupil[1]);
-	lc.setRow(0, 2, pupil[2]);
-	lc.setRow(0, 3, pupil[3]);
-	lc.setRow(0, 4, pupil[4]);
-	lc.setRow(0, 5, pupil[5]);
-	lc.setRow(0, 6, pupil[6]);
-	lc.setRow(0, 7, pupil[7]);
+	lc.setRow(0, 0, pupilError[0]);
+	lc.setRow(0, 1, pupilError[1]);
+	lc.setRow(0, 2, pupilError[2]);
+	lc.setRow(0, 3, pupilError[3]);
+	lc.setRow(0, 4, pupilError[4]);
+	lc.setRow(0, 5, pupilError[5]);
+	lc.setRow(0, 6, pupilError[6]);
+	lc.setRow(0, 7, pupilError[7]);
 	
-	lc.setRow(1, 0, pupil[0]);
-	lc.setRow(1, 1, pupil[1]);
-	lc.setRow(1, 2, pupil[2]);
-	lc.setRow(1, 3, pupil[3]);
-	lc.setRow(1, 4, pupil[4]);
-	lc.setRow(1, 5, pupil[5]);
-	lc.setRow(1, 6, pupil[6]);
-	lc.setRow(1, 7, pupil[7]);
+	lc.setRow(1, 0, pupilError[0]);
+	lc.setRow(1, 1, pupilError[1]);
+	lc.setRow(1, 2, pupilError[2]);
+	lc.setRow(1, 3, pupilError[3]);
+	lc.setRow(1, 4, pupilError[4]);
+	lc.setRow(1, 5, pupilError[5]);
+	lc.setRow(1, 6, pupilError[6]);
+	lc.setRow(1, 7, pupilError[7]);
 }
 /*
 
