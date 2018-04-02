@@ -56,7 +56,7 @@ Head head = Head();
 
 void setup() {
   // put your setup code here, to run once:
-  
+
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 
@@ -66,7 +66,7 @@ void setup() {
   pinMode(I2, OUTPUT);
   pinMode(I3, OUTPUT);
   pinMode(I4, OUTPUT);
-  
+
   lc.shutdown(0, false);
   lc.setIntensity(0, 0.1);
 
@@ -87,19 +87,19 @@ void loop() {
     /*
       eye_selection(), head_selection(), Serial.parseInt(), and wheel_selection() are
       being used to parse/translate the input recieved from the Rasberry Pi into useable
-      values in the form: "X,X,X". 
+      values in the form: "X,X,X".
     */
-    
+
     eye_selection = Serial.parseInt();
     head_selection = Serial.parseInt();
     wheel_selection = Serial.parseInt();
   }
- 
+
   /*
     This switch statement is being used to intake the input values parsed from the Rasberry Pi
     and then running the various combinations of numbers to convery specific eyes, head movements, and wheel movements
   */
-  
+
   switch (eye_selection) {
     case 0:
 
@@ -113,17 +113,17 @@ void loop() {
       break;
 
     case 2:
-      
+
       blinkAnim();
       error.display(lc);
-      
+
       break;
 
     case 3:
 
       blinkAnim();
       happy.display(lc);
-      
+
       break;
 
     case 4:
@@ -158,53 +158,53 @@ void loop() {
 
   switch (wheel_selection) {
     case 0:
- long duration, distance;
- digitalWrite(trigPin,HIGH);
- delayMicroseconds(1000);
- digitalWrite(trigPin, LOW);
- duration=pulseIn(echoPin, HIGH);
- distance =(duration/2)/29.1;
- Serial.print(distance);
- Serial.println("CM");
- delay(10);
+      long duration, distance;
+      digitalWrite(trigPin, HIGH);
+      delayMicroseconds(1000);
+      digitalWrite(trigPin, LOW);
+      duration = pulseIn(echoPin, HIGH);
+      distance = (duration / 2) / 29.1;
+      Serial.print(distance);
+      Serial.println("CM");
+      delay(10);
 
-  if ((distance <= 45)) {
-    
-    digitalWrite(E1, LOW);
-    digitalWrite(E2, LOW);
-    digitalWrite(E1, HIGH);
-    digitalWrite(E2, HIGH);
-    digitalWrite(I1, LOW);
-    digitalWrite(I2, HIGH);
-    digitalWrite(I3, LOW);
-    digitalWrite(I4, HIGH);
-   }
-    
-    else if (distance > 10) {
-    
-    digitalWrite(E1, HIGH);
-    digitalWrite(E2, HIGH);
-    digitalWrite(I1, LOW);
-    digitalWrite(I2, HIGH);
-    digitalWrite(I3, HIGH);
-    digitalWrite(I4, LOW);
-    
-   }
+      if ((distance <= 45)) {
 
-  
+        digitalWrite(E1, LOW);
+        digitalWrite(E2, LOW);
+        digitalWrite(E1, HIGH);
+        digitalWrite(E2, HIGH);
+        digitalWrite(I1, LOW);
+        digitalWrite(I2, HIGH);
+        digitalWrite(I3, LOW);
+        digitalWrite(I4, HIGH);
+      }
 
-  delay(500);
-    
-      
+      else if (distance > 10) {
+
+        digitalWrite(E1, HIGH);
+        digitalWrite(E2, HIGH);
+        digitalWrite(I1, LOW);
+        digitalWrite(I2, HIGH);
+        digitalWrite(I3, HIGH);
+        digitalWrite(I4, LOW);
+
+      }
+
+
+
+      delay(500);
+
+
       break;
 
     case 1:
-        digitalWrite(E1, HIGH);
-        digitalWrite(E2, HIGH);
-        digitalWrite(I1, HIGH);
-        digitalWrite(I2, HIGH);
-        digitalWrite(I3, HIGH);
-        digitalWrite(I4, HIGH);
+      digitalWrite(E1, HIGH);
+      digitalWrite(E2, HIGH);
+      digitalWrite(I1, HIGH);
+      digitalWrite(I2, HIGH);
+      digitalWrite(I3, HIGH);
+      digitalWrite(I4, HIGH);
       break;
 
     case 2:
@@ -220,20 +220,20 @@ void loop() {
       break;
   }
 
-  
+
 
   eye_selection = 0;
   head_selection = 0;
 
 
 
-    //TJ's code incoming
-  
+  //TJ's code incoming
+
 
 }
 
 /*
-  This is the code that is used for the blink animation being used in between eye transitions 
+  This is the code that is used for the blink animation being used in between eye transitions
 */
 
 void blinkAnim() {
