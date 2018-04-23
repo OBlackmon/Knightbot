@@ -1,0 +1,65 @@
+# Template for defining UserSays examples
+
+# give-color-intent:
+
+#  UserSays:
+#    - My color is blue
+#    - red is my favorite color
+
+#  Annotations:
+#    - blue: sys.color     # maps param value -> entity
+#    - red: sys.color
+
+
+greeting:
+  UserSays:
+  - hello
+  - hi
+  - hey
+  - hey knightbot
+  - greetings
+  - start
+  - launch
+  - begin
+
+get-office-hours:
+  UserSays:
+  - when does kwak  have office hours
+  - when are kwaks office hours
+  - when is kwak in his office
+  - when is garrison in his office
+  - when are garrisons office hours
+  - when does garrison have office hours
+
+  Annotations:
+    - kwak: professor
+    - garrison: professor
+
+rotate:
+  UserSays:
+  - rotate
+  - move
+  - move the servo
+  - rotate the servo
+  - rotate servos
+  - turn the servo
+  - turn
+
+blink:
+  UserSays:
+  - blink
+  - flash
+  - eyes
+  - blink the eyes
+
+lizard:
+  UserSays:
+  - stop
+  - end
+  - halt
+
+gugu:
+  UserSays:
+  - swank
+  - dum
+

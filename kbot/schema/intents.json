@@ -1,0 +1,502 @@
+[
+    {
+        "templates": [], 
+        "fallbackIntent": false, 
+        "responses": [
+            {
+                "action": "rotate_servo", 
+                "resetContexts": false, 
+                "affectedContexts": [], 
+                "messages": [], 
+                "parameters": []
+            }
+        ], 
+        "contexts": [], 
+        "auto": true, 
+        "id": "99d11fc6-fdc7-4b12-a0ef-62128fa4d105", 
+        "priority": 500000, 
+        "userSays": [
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "rotate", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "move", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "move the servo", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "rotate the servo", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "rotate servos", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "turn the servo", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "turn", 
+                        "userDefined": false
+                    }
+                ]
+            }
+        ], 
+        "webhookUsed": true, 
+        "webhookForSlotFilling": true, 
+        "events": [], 
+        "name": "rotate"
+    }, 
+    {
+        "templates": [], 
+        "fallbackIntent": false, 
+        "responses": [
+            {
+                "action": "swank", 
+                "resetContexts": false, 
+                "affectedContexts": [], 
+                "messages": [], 
+                "parameters": []
+            }
+        ], 
+        "contexts": [], 
+        "auto": true, 
+        "id": "ea3e7a24-cc31-4b6e-9293-8c66252b9fa5", 
+        "priority": 500000, 
+        "userSays": [
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "swank", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "dum", 
+                        "userDefined": false
+                    }
+                ]
+            }
+        ], 
+        "webhookUsed": true, 
+        "webhookForSlotFilling": true, 
+        "events": [], 
+        "name": "gugu"
+    }, 
+    {
+        "templates": [], 
+        "fallbackIntent": false, 
+        "responses": [
+            {
+                "action": "greet_and_start", 
+                "resetContexts": false, 
+                "affectedContexts": [], 
+                "messages": [], 
+                "parameters": []
+            }
+        ], 
+        "contexts": [], 
+        "auto": true, 
+        "id": "fa5c4ed7-ba4c-4b3b-83b7-acf92e41b795", 
+        "priority": 500000, 
+        "userSays": [
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "hello", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "hi", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "hey", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "hey knightbot", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "greetings", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "start", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "launch", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "begin", 
+                        "userDefined": false
+                    }
+                ]
+            }
+        ], 
+        "webhookUsed": true, 
+        "webhookForSlotFilling": true, 
+        "events": [], 
+        "name": "greeting"
+    }, 
+    {
+        "templates": [], 
+        "fallbackIntent": false, 
+        "responses": [
+            {
+                "action": "rotate_servo", 
+                "resetContexts": false, 
+                "affectedContexts": [], 
+                "messages": [], 
+                "parameters": []
+            }
+        ], 
+        "contexts": [], 
+        "auto": true, 
+        "id": "958225bc-2e81-4e55-8aeb-bc218e62cf28", 
+        "priority": 500000, 
+        "userSays": [
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "blink", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "flash", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "eyes", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "blink the eyes", 
+                        "userDefined": false
+                    }
+                ]
+            }
+        ], 
+        "webhookUsed": true, 
+        "webhookForSlotFilling": true, 
+        "events": [], 
+        "name": "blink"
+    }, 
+    {
+        "templates": [], 
+        "fallbackIntent": false, 
+        "responses": [
+            {
+                "action": "rotate_servo", 
+                "resetContexts": false, 
+                "affectedContexts": [], 
+                "messages": [], 
+                "parameters": []
+            }
+        ], 
+        "contexts": [], 
+        "auto": true, 
+        "id": "7c6d828e-edc4-441c-bc5a-391f18412833", 
+        "priority": 500000, 
+        "userSays": [
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "stop", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "end", 
+                        "userDefined": false
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "halt", 
+                        "userDefined": false
+                    }
+                ]
+            }
+        ], 
+        "webhookUsed": true, 
+        "webhookForSlotFilling": true, 
+        "events": [], 
+        "name": "lizard"
+    }, 
+    {
+        "templates": [], 
+        "fallbackIntent": true, 
+        "responses": [
+            {
+                "action": "confused", 
+                "resetContexts": false, 
+                "affectedContexts": [], 
+                "messages": [], 
+                "parameters": []
+            }
+        ], 
+        "contexts": [], 
+        "auto": true, 
+        "id": "7a55fed5-1e6c-4186-a7ed-f718afcd6b14", 
+        "priority": 500000, 
+        "userSays": [], 
+        "webhookUsed": true, 
+        "webhookForSlotFilling": true, 
+        "events": [], 
+        "name": "fallback"
+    }, 
+    {
+        "templates": [], 
+        "fallbackIntent": false, 
+        "responses": [
+            {
+                "action": "ask_for_hours", 
+                "resetContexts": false, 
+                "affectedContexts": [], 
+                "messages": [], 
+                "parameters": [
+                    {
+                        "name": "professor", 
+                        "dataType": "@professor", 
+                        "defaultValue": "", 
+                        "required": true, 
+                        "value": "$professor", 
+                        "prompts": [], 
+                        "isList": false
+                    }
+                ]
+            }
+        ], 
+        "contexts": [], 
+        "auto": true, 
+        "id": "e55fec4c-7937-4f75-be64-90e442e0cb8c", 
+        "priority": 500000, 
+        "userSays": [
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "when does "
+                    }, 
+                    {
+                        "text": "kwak", 
+                        "meta": "@professor", 
+                        "userDefined": true, 
+                        "alias": "professor"
+                    }, 
+                    {
+                        "text": "have office hours "
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "when are kwaks office hours "
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "when is "
+                    }, 
+                    {
+                        "text": "kwak", 
+                        "meta": "@professor", 
+                        "userDefined": true, 
+                        "alias": "professor"
+                    }, 
+                    {
+                        "text": "in his office "
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "when is "
+                    }, 
+                    {
+                        "text": "garrison", 
+                        "meta": "@professor", 
+                        "userDefined": true, 
+                        "alias": "professor"
+                    }, 
+                    {
+                        "text": "in his office "
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "when are garrisons office hours "
+                    }
+                ]
+            }, 
+            {
+                "count": 0, 
+                "isTemplate": false, 
+                "data": [
+                    {
+                        "text": "when does "
+                    }, 
+                    {
+                        "text": "garrison", 
+                        "meta": "@professor", 
+                        "userDefined": true, 
+                        "alias": "professor"
+                    }, 
+                    {
+                        "text": "have office hours "
+                    }
+                ]
+            }
+        ], 
+        "webhookUsed": true, 
+        "webhookForSlotFilling": true, 
+        "events": [], 
+        "name": "get-office-hours"
+    }
+]

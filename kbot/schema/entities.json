@@ -1,0 +1,23 @@
+[
+    {
+        "id": "0e9684a8-caee-4d32-9087-e309ca9f56b6", 
+        "isEnum": null, 
+        "name": "professor", 
+        "entries": [
+            {
+                "synonyms": [
+                    "kwak", 
+                    "kwok", 
+                    "quack"
+                ], 
+                "value": "kwak"
+            }, 
+            {
+                "synonyms": [
+                    "garrison"
+                ], 
+                "value": "garrison"
+            }
+        ]
+    }
+]
