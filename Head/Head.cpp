@@ -1,4 +1,6 @@
 
+
+
 #include "Head.h"
 #include "Servo.h"
 #include "Arduino.h"
@@ -56,5 +58,18 @@ void Head::nod(Servo vertic){
   	vertic.write(120);
   	delay(500);
   	vertic.write(55);
+}
+
+void Head:shake(Servo horiz){
+	
+	horiz.write(40);
+ 	delay(500);
+ 	horiz.write(120);
+ 	delay(500); 
+ 	horiz.write(40);
+ 	delay(500);
+ 	horiz.write(120);
+ 	delay(500);
+ 	horiz.write(90);
 }
 
