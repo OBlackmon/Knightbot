@@ -1,3 +1,4 @@
+
 #include <Servo.h>
 
 #include <Head.h>
@@ -226,10 +227,6 @@ void loop() {
   head_selection = 0;
 
 
-
-  //TJ's code incoming
-
-
 }
 
 /*
@@ -254,9 +251,6 @@ void blinkAnim() {
     delay(2);
   }
 }
-
-
-
 
 
 
