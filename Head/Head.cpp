@@ -60,7 +60,7 @@ void Head::nod(Servo vertic){
   	vertic.write(55);
 }
 
-void Head:shake(Servo horiz){
+void Head::shake(Servo horiz){
 	
 	horiz.write(40);
  	delay(500);

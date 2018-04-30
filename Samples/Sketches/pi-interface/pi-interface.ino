@@ -33,9 +33,9 @@ int pupilBlink[8] = {255, 255, 255, 255, 255, 255, 255, 255};
 int trigPin = 6;
 int echoPin = 7;
 
-int DIN = 52;
-int CS = 51;
-int CLK = 50;
+int DIN = 46;
+int CS = 50;
+int CLK = 48;
 
 int eye_selection = 0;
 int head_selection = 0;
@@ -152,12 +152,12 @@ void loop() {
       break;
 
     case 4:
+
       head.shake(horiz);
       break;
   }
 
-  switch (wheel_selection) {
-      
+  switch (1) {
     //Straight movement and turns right after a specific breakpoint
     case 0:
       long duration, distance;
@@ -196,8 +196,6 @@ void loop() {
 
 
       delay(500);
-
-
       break;
      //Stops the tracks
     case 1:
