@@ -34,9 +34,9 @@ int pupilBlink[8] = {255, 255, 255, 255, 255, 255, 255, 255};
 int trigPin = 6;
 int echoPin = 7;
 
-int DIN = 52;
-int CS = 51;
-int CLK = 50;
+int DIN = 46;
+int CS = 50;
+int CLK = 48;
 
 int eye_selection = 0;
 int head_selection = 0;
@@ -154,10 +154,12 @@ void loop() {
 
     case 4:
 
+      head.shake(horiz);
       break;
   }
 
-  switch (wheel_selection) {
+  switch (1) {
+    //Straight movement and turns right after a specific breakpoint
     case 0:
       long duration, distance;
       digitalWrite(trigPin, HIGH);
@@ -195,10 +197,8 @@ void loop() {
 
 
       delay(500);
-
-
       break;
-
+     //Stops the tracks
     case 1:
       digitalWrite(E1, HIGH);
       digitalWrite(E2, HIGH);
@@ -208,11 +208,55 @@ void loop() {
       digitalWrite(I4, HIGH);
       break;
 
+    //Call case 2 to move in a circle
     case 2:
+      
+     digitalWrite(E1, HIGH);
+     digitalWrite(E2, HIGH);
+     digitalWrite(I1, HIGH);
+     digitalWrite(I2, LOW);
+     digitalWrite(I3, HIGH);
+     digitalWrite(I4, LOW);
 
-      break;
+     delay (10000); // change direction after 10 seconds
+
+     digitalWrite(E1, LOW);
+     digitalWrite(E2, LOW);
+     delay(200);
+   
+     digitalWrite(E1, HIGH);
+     digitalWrite(E2, HIGH);
+     digitalWrite(I1, LOW);
+     digitalWrite(I2, HIGH);
+     digitalWrite(I3, HIGH);
+     digitalWrite(I4, LOW);
+     delay(10000);
+      
+     break;
 
     case 3:
+      
+      digitalWrite(E1, HIGH);
+      digitalWrite(E2, HIGH);
+      digitalWrite(I1, HIGH);
+      digitalWrite(I2, LOW);
+      digitalWrite(I3, LOW);
+      digitalWrite(I4, HIGH);
+      delay(10000);
+
+      // change direction
+
+      digitalWrite(E1, LOW);
+      digitalWrite(E2, LOW);
+      delay(200);
+
+      digitalWrite(E1, HIGH);
+      digitalWrite(E2, HIGH);
+      digitalWrite(I1, LOW);
+      digitalWrite(I2, HIGH);
+      digitalWrite(I3, HIGH);
+      digitalWrite(I4, LOW);
+      delay(10000);
 
       break;
 
